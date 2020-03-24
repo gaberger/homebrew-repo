@@ -1,5 +1,5 @@
 class FwdNinja < Formula
   homepage "https://gerrit.local.forwardnetworks.com/plugins/gitiles/ninja"
   url  "https://github.com/gaberger/fwd-ninja/releases/download/0.0.32/ninja"
-  sha256 "60FD9539319D9A3730C5B3C80BA138CDA8B9FAD302AE0BC3B812BEF2280F8E03"
+  sha256 "C901FE59FFEB3F73D43B94C06FDF5853FC3C4717C817865338B935F8B8C92429"
 end
