@@ -1,7 +1,7 @@
 class FwdNqe < Formula
   homepage "https://gerrit.local.forwardnetworks.com/plugins/gitiles/nqe"
-  url  "https://github.com/gaberger/fwd-nqe/releases/download/v0.0.4/nqe"
-  sha256 "178981813895a3fed88d06fbd893752f1e8049c6619bb63c5d342dbf04aba1fc"
+  url  "https://github.com/gaberger/fwd-nqe/releases/download/v0.0.5/nqe"
+  sha256 "e5f958a650cdd8d5a8d4d0418765a54ec3da74386050b3d95f7b474f29d129cb"
 
   bottle :unneeded
 
