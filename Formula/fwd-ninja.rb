@@ -1,7 +1,8 @@
 class FwdNinja < Formula
   homepage "https://gerrit.local.forwardnetworks.com/plugins/gitiles/ninja"
-  url  "https://github.com/gaberger/fwd-ninja/releases/download/v0.0.37/ninja"
-  sha256 "ced5464ab42913684afc11e63e9feed1f454114619fb87e9bfc4af40229e88e8"
+  url  "https://github.com/gaberger/fwd-ninja/releases/download/v0.0.38/ninja"
+  sha256 "258de416802d171de1006c92f3e2451a56b5505b53387226cecd2aedf5bd8951"
+
 
   bottle :unneeded
 
