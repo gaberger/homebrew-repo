@@ -1,0 +1,57 @@
+20-06-18 18:48:31 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - 800
+20-06-18 18:48:31 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - 800
+20-06-18 18:49:41 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - 50
+20-06-18 18:49:41 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - 50
+20-06-18 18:49:42 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - 44
+20-06-18 18:49:42 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - 44
+20-06-18 18:49:43 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - CiscoJasperVMLicense
+20-06-18 18:49:43 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - CiscoJasperVMLicense
+20-06-18 18:49:50 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - [31m2020-06-12[0m
+20-06-18 18:49:50 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - [31m2020-06-12[0m
+20-06-18 18:50:10 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - 2020-06-18
+20-06-18 18:50:10 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - 2020-06-18
+20-06-18 18:50:15 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - [32m2020-09-12[0m
+20-06-18 18:50:15 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - [32m2020-09-12[0m
+20-06-18 18:50:28 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - 2020-09-12
+20-06-18 18:50:28 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - 2020-09-12
+20-06-18 18:50:32 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - false
+20-06-18 18:50:32 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - false
+20-06-18 18:50:34 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - false
+20-06-18 18:50:34 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - false
+20-06-18 18:50:38 curry-forward.local ERROR [com.forwardnetworks.cv.tools.utils:179] - Error: Organization cisco-jasper-onprem-poc not found
+20-06-18 19:13:27 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.commands:165] - {:debug true, :user "garyberger@forwardnetworks.com", :password "p6fsayhy43dc35cyrpozzgfmy5lctyvx", :target "fwd.app", :org-name "cisco-jasper-onprem-poc", :_arguments ["cisco-jasper-onprem-poc"]}
+20-06-18 19:13:27 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.api:49] - https://app.forwardnetworks.com/api/admin/orgs garyberger@forwardnetworks.com
+20-06-18 19:13:28 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.api:231] - {:debug true, :user "garyberger@forwardnetworks.com", :password "p6fsayhy43dc35cyrpozzgfmy5lctyvx", :target "fwd.app", :org-name "cisco-jasper-onprem-poc", :_arguments ["cisco-jasper-onprem-poc"], :all true}
+20-06-18 19:13:28 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.api:174] - {:debug true, :user "garyberger@forwardnetworks.com", :password "p6fsayhy43dc35cyrpozzgfmy5lctyvx", :target "fwd.app", :org-name "cisco-jasper-onprem-poc", :_arguments ["cisco-jasper-onprem-poc"], :all true}
+20-06-18 19:13:28 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.api:49] - https://app.forwardnetworks.com/api/admin/orgs garyberger@forwardnetworks.com
+20-06-18 19:13:28 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.api:49] - https://app.forwardnetworks.com/api/orgs/1450/licenses garyberger@forwardnetworks.com
+20-06-18 19:13:28 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.license-utils:88] - {:debug true, :user "garyberger@forwardnetworks.com", :password "p6fsayhy43dc35cyrpozzgfmy5lctyvx", :target "fwd.app", :org-name "cisco-jasper-onprem-poc", :_arguments ["cisco-jasper-onprem-poc"], :all true, :color true}
+20-06-18 19:13:28 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.license-utils:89] - [{:missingSignaturesHeadroom 50, :licensedTo "CiscoJasperVMLicense", :deviceCap 440, :creationTimeMillis 1592056556105, :skipInstanceFingerprintValidation false, :signedLicenseKey "SignedLicenseKey__CvwBQ09rRUVsZ0kzZ1VZZ095OHRhb3VJSUNNNFlQSUxpakoxTnp2cWk0d3VBTTRNa0FzU2hSRGFYTmpiMHBoYzNCbGNsWk5UR2xqWlc1elpWQUFXQUJnQUdvR0NNRDdpL2NGY2dZSXdJL3grZ1Y2Q3dqc3RaUDNCUkQ0clo0eUdNcWZuc3VyTGlKVlNXNXpkR0Z1WTJWSlJGOWZRMmhOVTBWVVFYZFBha0pxVDJwSk5VOXFSbXBQYlZWNFQycFdiRVZvWjB0QmFtTTFSV2Q0U0ZwWE5URmhWelZzVTFjMU1GcFhkMkZCVkZscFFWUkZQVjh4TXpVMk1qa3dNZz09EkcwRQIgDZemgqy/zD9YMvDAItZRb9TNEO/p86rr5+8hbbCFWO8CIQCDHPqVc7UkfTvkgB3q9czTs8kQVkDhIrvHMwXxcmTnbQ==_2115766339", :endTimeMillis 1599883200000, :id 734, :decommissionCap 44, :zeroExistingUsage false, :invalidated false, :fingerprint "InstanceID__ChMSETAwOjBjOjI5OjFjOmUxOjVlEhgKAjc5EgxHZW51aW5lSW50ZWwaATYiATE=_13562902", :startTimeMillis 1591934400000}]
+20-06-18 19:13:28 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.license-utils:95] - clojure.lang.LazySeq@11b52c290
+20-06-18 19:13:28 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.api:234] - clojure.lang.LazySeq@11b52c290
+20-06-18 19:13:32 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.commands:174] - 1450 734
+20-06-18 19:13:32 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.license-utils:114] - []
+20-06-18 19:13:33 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.license-utils:121] - {:deviceCap 440, :missingSignaturesHeadroom 50, :decommissionCap 44, :licensedTo "CiscoJasperVMLicense", :start-time "[31m2020-06-12[0m", :end-time "[32m2020-09-12[0m", :zeroExistingUsage false, :skipInstanceFingerprintValidation false}
+20-06-18 19:13:39 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - 800
+20-06-18 19:13:39 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - 800
+20-06-18 19:13:41 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - 50
+20-06-18 19:13:41 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - 50
+20-06-18 19:13:42 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - 44
+20-06-18 19:13:42 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - 44
+20-06-18 19:13:43 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - CiscoJasperVMLicense
+20-06-18 19:13:43 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - CiscoJasperVMLicense
+20-06-18 19:13:47 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - [31m2020-06-12[0m
+20-06-18 19:13:47 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - [31m2020-06-12[0m
+20-06-18 19:13:54 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - 2020-06-12
+20-06-18 19:13:54 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - 2020-06-12
+20-06-18 19:13:56 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - [32m2020-09-12[0m
+20-06-18 19:13:56 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - [32m2020-09-12[0m
+20-06-18 19:14:07 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - 2020-09-12
+20-06-18 19:14:07 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - 2020-09-12
+20-06-18 19:14:11 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - false
+20-06-18 19:14:11 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - false
+20-06-18 19:14:13 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:260] - false
+20-06-18 19:14:13 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.utils:262] - false
+20-06-18 19:14:20 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.api:201] - {:missingSignaturesHeadroom 50, :licensedTo "CiscoJasperVMLicense", :deviceCap 800, :password "p6fsayhy43dc35cyrpozzgfmy5lctyvx", :_arguments ["cisco-jasper-onprem-poc"], :start-time "2020-06-12", :end-time "2020-09-12", :debug true, :endTimeMillis 1599868800000, :org-name "cisco-jasper-onprem-poc", :decommissionCap 44, :zeroExistingUsage false, :target "fwd.app", :permissiveLicense false, :user "garyberger@forwardnetworks.com", :startTimeMillis 1591920000000}
+20-06-18 19:14:20 curry-forward.local DEBUG [com.forwardnetworks.cv.tools.api:213] - {:debug true, :body "{\"startTimeMillis\":1591920000000,\"endTimeMillis\":1599868800000,\"deviceCap\":800,\"missingSignaturesHeadroom\":50,\"decommissionCap\":44,\"zeroExistingUsage\":false,\"permissiveLicense\":false,\"licensedTo\":\"CiscoJasperVMLicense\"}"}
+20-06-18 19:14:20 curry-forward.local ERROR [com.forwardnetworks.cv.tools.utils:179] - Error: Organization cisco-jasper-onprem-poc not found
