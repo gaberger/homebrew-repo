@@ -6,7 +6,7 @@ require "download_strategy"
 #To use it, add
 # `:using => :github_private_repo` to the URL section of
 # your formula. This download strategy uses GitHub access tokens (in the
-# environment variables `FWD_API_TOKEN`) to sign the request.  This
+# environment variables `HOMEBREW_FWD_API_TOKEN`) to sign the request.  This
 # strategy is suitable for corporate use just like S3DownloadStrategy, because
 # it lets you use a private GitHub repository for internal distribution.  It
 # works with public one, but in that case simply use CurlDownloadStrategy.
@@ -41,9 +41,9 @@ class CustomGitHubPrivateRepositoryDownloadStrategy < CurlDownloadStrategy
   end
 
   def set_github_token
-    @github_token = ENV["FWD_API_TOKEN"]
+    @github_token = ENV["HOMEBREW_FWD_API_TOKEN"]
     unless @github_token
-      raise CurlDownloadStrategyError, "Environmental variable FWD_API_TOKEN is required."
+      raise CurlDownloadStrategyError, "Environmental variable HOMEBREW_FWD_API_TOKEN is required."
     end
 
     validate_github_repository_access!
@@ -56,7 +56,7 @@ class CustomGitHubPrivateRepositoryDownloadStrategy < CurlDownloadStrategy
     # We only handle HTTPNotFoundError here,
     # becase AuthenticationFailedError is handled within util/github.
     message = <<~EOS
-    FWD_API_TOKEN can not access the repository: #{@owner}/#{@repo}
+    HOMEBREW_FWD_API_TOKEN can not access the repository: #{@owner}/#{@repo}
       This token may not have permission to access the repository or the url of formula may be incorrect.
     EOS
     raise CurlDownloadStrategyError, message
@@ -66,7 +66,7 @@ end
 # GitHubPrivateRepositoryReleaseDownloadStrategy downloads tarballs from GitHub
 # Release assets. To use it, add `:using => :github_private_release` to the URL section
 # of your formula. This download strategy uses GitHub access tokens (in the
-# environment variables FWD_API_TOKEN) to sign the request.
+# environment variables HOMEBREW_FWD_API_TOKEN) to sign the request.
 class CustomGitHubPrivateRepositoryReleaseDownloadStrategy < CustomGitHubPrivateRepositoryDownloadStrategy
   require 'net/http'
 
@@ -112,6 +112,7 @@ class CustomGitHubPrivateRepositoryReleaseDownloadStrategy < CustomGitHubPrivate
 
   def resolve_asset_id
     release_metadata = fetch_release_metadata
+    print @filename
     assets = release_metadata["assets"].select { |a| a["name"] == @filename }
     raise CurlDownloadStrategyError, "Asset file not found." if assets.empty?
 
