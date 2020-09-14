@@ -12,7 +12,7 @@ class Ninja < Formula
   bottle :unneeded
   
   def install
-    print OS.mac?
+    print "Is MAC #{OS.mac?}"
     if @url =~ /macos/i
       bin.install "ninja-#{version}-macos" => "ninja"
     else
