@@ -13,7 +13,7 @@ class Ninja < Formula
   
   def install
     print "Is MAC #{OS.mac?}"
-    if @url =~ /macos/i
+    if url =~ /macos/i
       bin.install "ninja-#{version}-macos" => "ninja"
     else
       bin.install "ninja-#{version}-linux" => "ninja"
