@@ -7,7 +7,7 @@ class Ninja < Formula
   homepage "https://gerrit.local.forwardnetworks.com/plugins/gitiles/ninja"
   url urlSelect , :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy
   sha = OS.mac? ? "3ca28b61172d16692ad8de0139887eb567a93cfecdd41c13ea48bc7f4f50747a" : "025acb0ac5bddfe07833f7c58b867fd8455cee01906d8721a2466b41fa81f4d6"
-  sha256 "025acb0ac5bddfe07833f7c58b867fd8455cee01906d8721a2466b41fa81f4d6"
+  sha256 sha
 
   bottle :unneeded
 
