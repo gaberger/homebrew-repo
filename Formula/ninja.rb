@@ -6,7 +6,7 @@ class Ninja < Formula
   urlSelect = OS.mac? ? "https://github.com/firstclassfunc/ninja/releases/download/#{version}/ninja-#{version}-macos" : "https://github.com/firstclassfunc/ninja/releases/download/#{version}/ninja-#{version}-linux"
   homepage "https://gerrit.local.forwardnetworks.com/plugins/gitiles/ninja"
   url urlSelect , :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy
-  sha = OS.mac? ? "3ca28b61172d16692ad8de0139887eb567a93cfecdd41c13ea48bc7f4f50747a" : "025acb0ac5bddfe07833f7c58b867fd8455cee01906d8721a2466b41fa81f4d6"
+  sha = OS.mac? ? "de05eca7360a3a00b4bc349899997775fd0872dc8242535019a207928061a29d" : "1675ec5041e3d7ea4cbc4b3b197e9ac74cc81dd073bc1f7e3dd9854fddfe752e"
   sha256 sha
 
   bottle :unneeded
