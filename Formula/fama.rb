@@ -1,6 +1,5 @@
 require_relative "../custom_download_strategy.rb"
 
-
 class Fama < Formula
   desc "Forward Ask Me Anythingl"
   version "v0.1.7"
