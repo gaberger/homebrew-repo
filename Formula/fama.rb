@@ -2,7 +2,7 @@ require_relative "../custom_download_strategy.rb"
 
 class Fama < Formula
   desc "Forward Ask Me Anythingl"
-  version "v0.1.7"
+  version "v0.1.8"
   urlSelect = OS.mac? ? "https://github.com/firstclassfunc/fama/releases/download/#{version}/fama-#{version}-macos" : "https://github.com/firstclassfunc/fama/releases/download/#{version}/fama-#{version}-linux"
   homepage "https://gerrit.local.forwardnetworks.com/plugins/gitiles/fama"
   url urlSelect , :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy
