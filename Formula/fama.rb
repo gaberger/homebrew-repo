@@ -6,7 +6,7 @@ class Fama < Formula
   urlSelect = OS.mac? ? "https://github.com/firstclassfunc/fama/releases/download/#{version}/fama-#{version}-macos" : "https://github.com/firstclassfunc/fama/releases/download/#{version}/fama-#{version}-linux"
   homepage "https://gerrit.local.forwardnetworks.com/plugins/gitiles/fama"
   url urlSelect , :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy
-  sha = OS.mac? ? "8b135441742032d85f01b3243aa11f6677e5b7219866069ff31978fe8788980b" : "d5346182465feb969db348a63808cefad65c4ab8ce584a975d5fa79cdd0a5e3a"
+  sha = OS.mac? ? "889122d78d4163ef407dece5a803ef97d1932fc0fb9734a4492aa3444930be4c" : "e770e6817fe9297a5a9505bde822f1f029f210d0a31c72289fbdbcdf96e2c759"
   sha256 sha
 
   bottle :unneeded
