@@ -8,7 +8,6 @@ class Fama < Formula
   url urlSelect , :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy
   sha = OS.mac? ? "1a1fa36654816f34df2f8f8d9729e6ae128181891af2afb7990c91af57f2e328" : "4ac163f5a793a314197849a696da2c9cf326da2280c5dec12b0f696cfbfcce5c"
   sha256 sha
-
   bottle :unneeded
 
   def install
