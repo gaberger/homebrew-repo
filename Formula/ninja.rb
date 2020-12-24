@@ -2,11 +2,11 @@ require_relative "../custom_download_strategy.rb"
 
 class Ninja < Formula
   desc "Forward Ninja Admin Tool"
-  version "v0.1.18"
+  version "v0.1.28"
   urlSelect = OS.mac? ? "https://github.com/firstclassfunc/ninja/releases/download/#{version}/ninja-#{version}-macos" : "https://github.com/firstclassfunc/ninja/releases/download/#{version}/ninja-#{version}-linux"
   homepage "https://gerrit.local.forwardnetworks.com/plugins/gitiles/ninja"
   url urlSelect , :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy
-  sha = OS.mac? ? "cc22339be58b9882252fc203b589658b3850160d62140692c31c34504d9069d8" : "e8d8db36aadc7b1ec76b385649d34c4927e8bf86d45424841b56edb624d139a4"
+  sha = OS.mac? ? "d277d913b7cc01d1de11ac464e1539b66ff1c178ae11d206d3986073cd61beee" : "b126ad009c2be13fcd5ea0409ca29df3a327e8c7a152058154b4ee5817ae9915"
   sha256 sha
 
   bottle :unneeded
