@@ -6,7 +6,7 @@ class Jql < Formula
   depends_on "borkdude/brew/babashka"
   url = "https://github.com/firstclassfunc/jql/blob/main/target/jql-#{version}.clj"
   homepage "https://github.com/firstclassfunc/jql"
-  sha = fa511699d7bdae262677ccc1317ac8f150ba6b1c2be2873c030fb3b2c39ef96a
+  sha = "fa511699d7bdae262677ccc1317ac8f150ba6b1c2be2873c030fb3b2c39ef96a"
 
   bottle :unneeded
 
