@@ -12,7 +12,7 @@ class Jql < Formula
   bottle :unneeded
 
   def install
-    bin.install "jql-#{version}.clj" => "jql"
+    bin.install "jql.clj" => "jql"
   end
 
   test do
