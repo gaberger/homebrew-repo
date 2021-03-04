@@ -3,12 +3,12 @@ require_relative "../custom_download_strategy.rb"
 
 class Jql < Formula
   desc "Forward JQL Tool"
-  version "v0.1.7"
+  version "v0.1.8"
   depends_on "borkdude/brew/babashka"
   urlSelect =  "https://github.com/firstclassfunc/jql/releases/download/#{version}/jql"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
   homepage "https://github.com/firstclassfunc/jql"
-  sha256 "bf3c2b9d9ba7c25a8440718753b3853b4b6d414305235f0e9d3b9a9e62f81ae2"
+  sha256 "adc43ee980f39f921d8fcbaefd414f47fbc209c5552b69161b5d5202ac14f824"
 
   bottle :unneeded
 
