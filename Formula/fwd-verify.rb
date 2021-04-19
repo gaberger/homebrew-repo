@@ -8,13 +8,12 @@ class FwdVerify < Formula
   urlSelect =  "https://github.com/firstclassfunc/fwd-verify/releases/download/#{version}/fwd-verify-#{version}"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
   homepage "https://github.com/firstclassfunc/fwd-verify"
-  sha256 "72978764205e4b9df9de2de5512b0cdd1f561058ccec5626ff7110316b8b2d94"
+  sha256 "b60e8de605b35772383661df45573d8d5755bb56b279cb4b175d752457686950"
 
   bottle :unneeded
 
   def install
     prefix.install "fwd-verify-#{version}"
-    print "Module Installed"                     
   end
 
 end
