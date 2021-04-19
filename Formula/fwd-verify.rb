@@ -9,12 +9,13 @@ class FwdVerify < Formula
   urlSelect =  "https://github.com/firstclassfunc/fwd-verify/releases/download/#{version}/fwd-verify-#{version}"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
   homepage "https://github.com/firstclassfunc/fwd-verify"
-  sha256 "b60e8de605b35772383661df45573d8d5755bb56b279cb4b175d752457686950"
+  sha256 "9b4d977d1c1c8ada5447184c6372400c07c81dbe3c393a206bdc855579dba15b"
 
   bottle :unneeded
 
   def install
     prefix.install "fwd-verify-#{version}"
-    FileUtils.ln_s  "fwd-verify-#{version}", "fwd-verify", force: true
+    FileUtils.ln_s  "#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}/fwd-verify-#{version}", "#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}/fwd-verify", force: true
   end
+                         
 end
