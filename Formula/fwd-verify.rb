@@ -12,4 +12,8 @@ class FwdVerify < Formula
 
   bottle :unneeded
 
+  def install
+    prefix.install #{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}
+  end
+
 end
