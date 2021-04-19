@@ -12,8 +12,4 @@ class FwdVerify < Formula
 
   bottle :unneeded
 
-  def install
-    prefix.install Dir["forwardnetworks" "fwd-verify"]
-  end
-
 end
