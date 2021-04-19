@@ -3,7 +3,7 @@ require_relative "../custom_download_strategy.rb"
 
 class Fwd-verify < Formula
   desc "Forward Networks Ansible Verification Module"
-  version "v0.0.6"
+  version "v0.0.7"
   depends_on "borkdude/brew/babashka"
   urlSelect =  "https://github.com/firstclassfunc/fwd-verify/releases/download/#{version}/fwd-verify-#{version}"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
