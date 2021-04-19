@@ -13,7 +13,7 @@ class FwdVerify < Formula
   bottle :unneeded
 
   def install
-    prefix.install fwd-verify-#{version}
+    prefix.install "fwd-verify-#{version}"
     print "Module Installed"                     
   end
 
