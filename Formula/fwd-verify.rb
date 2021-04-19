@@ -3,17 +3,17 @@ require_relative "../custom_download_strategy.rb"
 
 class Fwd-verify < Formula
   desc "Forward Networks Ansible Verification Module"
-  version "v0.0.5"
+  version "v0.0.6"
   depends_on "borkdude/brew/babashka"
-  urlSelect =  "https://github.com/firstclassfunc/fwd-verify/releases/download/#{version}/fwd-verify"
+  urlSelect =  "https://github.com/firstclassfunc/fwd-verify/releases/download/#{version}/fwd-verify-#{version}"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
   homepage "https://github.com/firstclassfunc/fwd-verify"
-  sha256 "b60e8de605b35772383661df45573d8d5755bb56b279cb4b175d752457686950"
+  sha256 "72978764205e4b9df9de2de5512b0cdd1f561058ccec5626ff7110316b8b2d94"
 
   bottle :unneeded
 
   def install
-    prefix.install Dir["forwardnetworkswd-verify"]
+    prefix.install Dir["forwardnetworks" "fwd-verify"]
   end
 
 end
