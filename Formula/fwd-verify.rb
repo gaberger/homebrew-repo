@@ -1,7 +1,7 @@
 
 require_relative "../custom_download_strategy.rb"
 
-class Fwd-verify < Formula
+class FwdVerify < Formula
   desc "Forward Networks Ansible Verification Module"
   version "v0.0.7"
   depends_on "borkdude/brew/babashka"
