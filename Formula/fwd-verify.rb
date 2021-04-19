@@ -13,7 +13,7 @@ class FwdVerify < Formula
   bottle :unneeded
 
   def install
-    (#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}).install #{name}
+    prefix.install fwd-verify-#{version}
     print "Module Installed"                     
   end
 
