@@ -1,6 +1,6 @@
 
 require_relative "../custom_download_strategy.rb"
-require 'fileutils'
+require "fileutils"
 
 class FwdVerify < Formula
   desc "Forward Networks Ansible Verification Module"
