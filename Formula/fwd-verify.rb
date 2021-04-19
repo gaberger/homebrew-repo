@@ -14,6 +14,7 @@ class FwdVerify < Formula
 
   def install
     prefix.install "fwd-verify-#{version}"
+    FileUtils.ln_s fwd-verify, "fwd-verify-#{version}"
   end
 
 end
