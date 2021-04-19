@@ -1,5 +1,6 @@
 
 require_relative "../custom_download_strategy.rb"
+require 'fileutils'
 
 class FwdVerify < Formula
   desc "Forward Networks Ansible Verification Module"
@@ -16,5 +17,4 @@ class FwdVerify < Formula
     prefix.install "fwd-verify-#{version}"
     FileUtils.ln_s(fwd-verify, "fwd-verify-#{version}")
   end
-
 end
