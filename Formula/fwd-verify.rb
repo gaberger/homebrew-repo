@@ -9,7 +9,7 @@ class FwdVerify < Formula
   urlSelect =  "https://github.com/firstclassfunc/fwd-verify/releases/download/#{version}/fwd-verify-#{version}"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
   homepage "https://github.com/firstclassfunc/fwd-verify"
-  sha256 "7575a0cfb8577430750c5333100a901f99c73ae1a5bc4c4e321ed2a4fdfc0ae6"
+  sha256 "0db79f5dad456d74e7b973e02a198734030317f32237fa4cf2d827e3628a40a4"
 
   bottle :unneeded
 
