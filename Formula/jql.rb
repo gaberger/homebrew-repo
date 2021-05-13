@@ -2,7 +2,7 @@
 require_relative "../custom_download_strategy.rb"
 require "fileutils"
 
-class FwdVerify < Formula
+class Jql < Formula
   desc "Forward JQL"
   version "v0.1.27"
   depends_on "borkdude/brew/babashka"
