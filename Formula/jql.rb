@@ -9,7 +9,7 @@ class FwdVerify < Formula
   urlSelect =   "https://github.com/firstclassfunc/jql/releases/download/#{version}/jql"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
   homepage "https://github.com/firstclassfunc/jql"
-  sha256 "299e3af09995f4fc56afd79ebc2f94db78b15a053e08b9ac78b3587165c4b192"
+  sha256 "df3de0ca934935c5f68fba84f5a552fc3b3066dee40942b845c39a01995a6bb9"
 
   bottle :unneeded
 
