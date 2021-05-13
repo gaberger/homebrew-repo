@@ -4,7 +4,7 @@ require "fileutils"
 
 class FwdVerify < Formula
   desc "Forward JQL"
-  version "v0.1.26"
+  version "v0.1.27"
   depends_on "borkdude/brew/babashka"
   urlSelect =   "https://github.com/firstclassfunc/jql/releases/download/#{version}/jql"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
