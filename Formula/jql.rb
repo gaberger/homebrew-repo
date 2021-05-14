@@ -9,7 +9,7 @@ class Jql < Formula
   urlSelect =   "https://github.com/firstclassfunc/jql/releases/download/#{version}/jql"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
   homepage "https://github.com/firstclassfunc/jql"
-  sha256 "6f88b49b644e7bc8d30d391645a81c9ca9bc8f0b8291769735299198a2548fc5"
+  sha256 "7ea6710e666223a0d599ede95f47036dec1217aa70ed40daa4cba3d818ec8373"
 
   bottle :unneeded
 
