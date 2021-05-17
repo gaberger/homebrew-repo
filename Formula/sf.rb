@@ -4,7 +4,7 @@ require "fileutils"
 
 class Jql < Formula
   desc "Forward SF"
-  version "v0.0.1"
+  version "v0.0.2"
   depends_on "borkdude/brew/babashka"
   urlSelect =   "https://github.com/firstclassfunc/sf/releases/download/#{version}/sf"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
