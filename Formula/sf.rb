@@ -2,14 +2,14 @@
 require_relative "../custom_download_strategy.rb"
 require "fileutils"
 
-class Jql < Formula
+class Sf < Formula
   desc "Forward SF"
-  version "v0.0.1"
+  version "v0.0.2"
   depends_on "borkdude/brew/babashka"
   urlSelect =   "https://github.com/firstclassfunc/sf/releases/download/#{version}/sf"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
   homepage "https://github.com/firstclassfunc/sf"
-  sha256 "f92e98e23b060ce963cdacc655ee02ca7b7bfe8f3a71bd0debe2b6cb9aa8a6e5"
+  sha256 "712cd0f6850af28661138b41988e38d4a4a159b605d37555e0471649525e0bf5"
 
   bottle :unneeded
 
