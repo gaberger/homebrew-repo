@@ -4,12 +4,12 @@ require "fileutils"
 
 class FwdVerify < Formula
   desc "Forward Networks Ansible Verification Module"
-  version "v0.0.14"
+  version "v0.0.15"
   depends_on "borkdude/brew/babashka"
   urlSelect =  "https://github.com/firstclassfunc/fwd-verify/releases/download/#{version}/fwd-verify-#{version}"
   url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
   homepage "https://github.com/firstclassfunc/fwd-verify"
-  sha256 "85748ceb80365113866e6f0ec2d6dd542e85a6496eccf50f200cc84bd16c87dc"
+  sha256 "df44602ef2ca854497fc433bb3dbe46c6774bc1e03df1c9fe790aa9bb50df663"
 
   bottle :unneeded
 
