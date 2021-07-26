@@ -14,8 +14,9 @@ class FwdVerify < Formula
   bottle :unneeded
 
   def install
-    prefix.install "#{versionFile}"
-    FileUtils.ln_s  "#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}/#{versionFile}", "#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}/fwd-verify", force: true
+    bin.install @@versionFile => "fwd-verify"
+                     
+    #FileUtils.ln_s  "#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}/#{versionFile}", "#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}/fwd-verify", force: true
   end
                          
 end
