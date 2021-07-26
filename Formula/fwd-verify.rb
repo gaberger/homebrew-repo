@@ -1,7 +1,7 @@
 
 require "fileutils"
 require "formula"
-require_relative "lib/private_strategy"
+require_relative "lib/private_strategy.rb"
 
 class FwdVerify < Formula
   desc "Forward Networks Ansible Verification Module"
