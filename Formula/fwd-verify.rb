@@ -4,13 +4,11 @@ require "fileutils"
 
 class FwdVerify < Formula
   desc "Forward Networks Ansible Verification Module"
-  version "v0.0.17"
-  depends_on "borkdude/brew/babashka"
-  urlSelect =  "https://github.com/firstclassfunc/fwd-verify/releases/download/#{version}/fwd-verify-#{version}"
-  url urlSelect, :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy  
+  version "v0.0.18"
+  urlSelect = OS.mac? ? "https://github.com/firstclassfunc/fwd-verify/releases/download/#{version}/fwd-verify-#{version}-macos" : "https://github.com/firstclassfunc/fwd-verify/releases/download/#{version}/fwd-verify-#{version}-linux"
   homepage "https://github.com/firstclassfunc/fwd-verify"
-  sha256 "71c6413523abf621546c5eb381e61c2aa540b493fc8319bba1c36cc64c57e9bb"
-
+  url urlSelect , :using => CustomGitHubPrivateRepositoryReleaseDownloadStrategy
+  sha = OS.mac? ? "ffd5075a01692d29e4ae25dd00ded751217670a1017ef975a7b4c951fd9e7c3f" : "5e0be7bf21bcb582c295aee20998b7fde48b69f552d56e7a72c05b6dabcfb1e4"
   bottle :unneeded
 
   def install
