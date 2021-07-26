@@ -11,10 +11,11 @@ class FwdVerify < Formula
   url urlSelect , :using => GitHubPrivateRepositoryReleaseDownloadStrategy
   sha = OS.mac? ? "null" : "null"
   bottle :unneeded
+  version_file = OS.mac? ?  "fwd-verify-#{version}-macos" : "fwd-verify-#{version}-linux"                        
 
   def install
-    prefix.install OS.mac? ? "fwd-verify-#{version}-macos" : "fwd-verify-#{version}-linux"
-    FileUtils.ln_s  "#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}/fwd-verify-#{version}", "#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}/fwd-verify", force: true
+    prefix.install "#{version_file}"
+    FileUtils.ln_s  "#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}/#{version_file}", "#{HOMEBREW_PREFIX}/Cellar/#{name}/#{version}/fwd-verify", force: true
   end
                          
 end
