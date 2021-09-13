@@ -1,5 +1,5 @@
 
-require_relative "../custom_download_strategy.rb"
+require_relative "lib/private_strategy"
 require "fileutils"
 
 class Jql < Formula
