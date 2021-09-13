@@ -1,5 +1,6 @@
 
 require_relative "lib/private_strategy"
+require "formula"
 require "fileutils"
 
 class Jql < Formula
