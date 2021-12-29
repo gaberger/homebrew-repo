@@ -12,7 +12,6 @@ class Jql < Formula
   homepage "https://github.com/firstclassfunc/jql"
   sha256 "7ea6710e666223a0d599ede95f47036dec1217aa70ed40daa4cba3d818ec8373"
 
-  bottle :unneeded
 
    def install
     bin.install "jql" => "jql"

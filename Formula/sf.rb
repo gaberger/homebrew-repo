@@ -11,7 +11,6 @@ class Sf < Formula
   homepage "https://github.com/firstclassfunc/sf"
   sha256 "712cd0f6850af28661138b41988e38d4a4a159b605d37555e0471649525e0bf5"
 
-  bottle :unneeded
 
    def install
     bin.install "sf" => "sf"

@@ -4,7 +4,6 @@ class FwdNqe < Formula
   sha256 "774d5464626031d80a70f6124bf3df0328c9cfa2a47dcfb5c6adb8587fa55d31"
 
 
-  bottle :unneeded
 
   def install
     bin.install "nqe"
